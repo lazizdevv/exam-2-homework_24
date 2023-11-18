@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+// ---------------------font-family: Cera Round Pro; Start-----------------------------
+
+@font-face {
+    font-family: 'Cera Round Pro';
+    src: url(../../assets/fonts/cera-round-pro/Fontspring-DEMO-ceraroundpro-black.otf);
+}
+
+@font-face {
+    font-family: 'Cera Round Pro';
+    src: url(../../assets/fonts/cera-round-pro/Fontspring-DEMO-ceraroundpro-bold.otf);
+}
+
+@font-face {
+    font-family: 'Cera Round Pro';
+    src: url(../../assets/fonts/cera-round-pro/Fontspring-DEMO-ceraroundpro-light.otf);
+}
+
+@font-face {
+    font-family: 'Cera Round Pro';
+    src: url(../../assets/fonts/cera-round-pro/Fontspring-DEMO-ceraroundpro-medium.otf);
+}
+
+@font-face {
+    font-family: 'Cera Round Pro';
+    src: url(../../assets/fonts/cera-round-pro/Fontspring-DEMO-ceraroundpro-regular.otf);
+}
+
+@font-face {
+    font-family: 'Cera Round Pro';
+    src: url(../../assets/fonts/cera-round-pro/Fontspring-DEMO-ceraroundpro-thin.otf);
+}
+
+// --------------------------- Cera Round Pro End--------------------------------------
+

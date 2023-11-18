@@ -1,0 +1,116 @@
+@use "../global";
+@use "../utils/variables" as var;
+
+main{
+    
+    margin-bottom: 200px;
+    .news{
+
+        .link{
+            display: flex;
+            margin-top: 70px;
+
+            a{
+                color: #B0B0B0;
+                font-variant-numeric: lining-nums tabular-nums;
+                font-family: Open Sans;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 0.42px;
+                text-transform: capitalize;
+            }
+
+            .link__activ{
+                color: var.$primary-color;
+                font-variant-numeric: lining-nums tabular-nums;
+                font-family: Open Sans;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 0.42px;
+                text-transform: capitalize;
+            }
+        }
+
+        
+        .row{
+            .news__card{
+                max-width: 410px;
+                padding-bottom: 30px;
+
+                img{
+                    max-width: 100%;
+                }
+
+                .card__content{
+                    h2{
+                        max-width: 332px;
+                        color: var.$black-color;
+                        font-variant-numeric: lining-nums tabular-nums;
+                        font-family: Cera Round Pro;
+                        font-size: 24px;
+                        font-weight: 500;
+                        line-height: 32px;
+                        text-transform: capitalize;
+                    }
+
+                    p{
+                        max-width: 361px;
+                        color: #AAA;
+                        font-family: Open Sans;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+
+                    .content__link{
+                        display: flex;
+                        justify-content: space-between;
+                        align-content: center;
+
+                        a{
+                            color: var.$primary-color;
+                            font-family: Cera Round Pro;
+                            font-size: 16px;
+                            font-weight: 700;
+                            letter-spacing: 0.64px;
+                        }
+
+                        span{
+                            opacity: 0.5;
+                            color: var.$black-color;
+                            font-family: Open Sans;
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+
+        .news__bottom{
+            display:flex;
+            margin-top: 70px;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+
+            button{
+                padding: 8px 32px;
+                border-radius: 100px;
+                border: 1px solid var.$primary-color;
+                transition: 0.5s;
+                color: var.$black-color;
+                font-family: Cera Round Pro;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 175%; /* 28px */
+                letter-spacing: 0.64px;
+            }
+
+            button:hover {
+                background: var.$primary-color;
+                color: var.$white-color;
+            }
+        }
+    }
+}

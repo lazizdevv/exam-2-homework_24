@@ -1,0 +1,267 @@
+@use "../global";
+
+@use "../utils/variables" as var;
+
+header{
+    background: var.$primary-color;
+    padding-top: 80px;
+    padding-bottom: 237px;
+    .header{
+        .row{
+            .header__left{
+                p{
+                    color: #FFF;
+                    font-variant-numeric: lining-nums tabular-nums;
+                    font-family: Cera Round Pro;
+                    font-size: 23px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 130%; /* 29.9px */
+                    letter-spacing: 0.92px;
+                    text-transform: capitalize;
+                }
+
+                h1{
+                    max-width: 555px;
+                    color: #FFF;
+                    font-family: Cera Round Pro;
+                    font-size: 90px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 130%; /* 117px */
+                    letter-spacing: 3.6px;
+                    text-transform: capitalize;
+                }
+
+                span{
+                    display: flex;
+                    margin-top: 20px;
+                    margin-bottom: 40px;
+                    
+                    max-width: 453px;
+                    opacity: 0.7;
+                    color: #FFF;
+                    font-family: Open Sans;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 175%; /* 28px */
+                    letter-spacing: 0.64px;
+                }
+
+                a{
+                    button{
+                        background: transparent;
+                        display: inline-flex;
+                        padding: 8px 32px;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 100px;
+                        border: 1px solid #FFF;
+
+                        color: #FFF;
+                        font-family: Cera Round Pro;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 175%; /* 28px */
+                        letter-spacing: 0.64px;
+                    }
+                }
+
+            }
+
+            .header__right{
+                
+                position: relative;
+
+                svg{
+                    max-width: 100%;
+                }
+                
+
+                img{
+                    border-top-left-radius: 40%;
+                    border-bottom-left-radius: 40%;
+
+                    position: absolute;
+                    top: 15%;
+                    left: 25px;
+                    width: 90%;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+
+}
+
+main{
+    margin-bottom: 200px;
+    .news{
+        text-align: center;
+
+        button{
+            margin-top: 50px;
+            padding: 8px 32px;
+            border-radius: 100px;
+            border: 1px solid var.$primary-color;
+            color: var.$black-color;
+            font-family: Cera Round Pro;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 175%;
+            letter-spacing: 0.64px;
+        }
+        .spec-top{
+            h1{
+                color: var.$black-color;
+                font-variant-numeric: lining-nums tabular-nums;
+                font-family: Cera Round Pro;
+                font-size: 23px;
+                font-weight: 700;
+                line-height: 130%;
+                letter-spacing: 0.92px;
+                text-transform: capitalize;
+            }
+
+            p{
+                color: var.$primary-color;
+                font-variant-numeric: lining-nums tabular-nums;
+                font-family: Cera Round Pro;
+                font-size: 48px;
+                font-weight: 500;
+                line-height: 130%;
+                letter-spacing: 1.44px;
+                text-transform: capitalize;  
+            }
+            
+        }
+
+        .row{
+            .news__card{
+                max-width: 410px;
+                padding-bottom: 30px;
+
+                img{
+                    max-width: 100%;
+                }
+
+                .card__content{
+                    h2{
+                        max-width: 332px;
+                        color: #242424;
+                        font-variant-numeric: lining-nums tabular-nums;
+                        font-family: Cera Round Pro;
+                        font-size: 24px;
+                        font-weight: 500;
+                        line-height: 32px; /* 133.333% */
+                        text-transform: capitalize;
+                    }
+
+                    p{
+                        max-width: 361px;
+                        color: var(--AAAAAA, #AAA);
+                        font-family: Open Sans;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 24px; /* 171.429% */
+                    }
+
+                    .content__link{
+                        display: flex;
+                        justify-content: space-between;
+                        align-content: center;
+
+                        a{
+                            color: var.$primary-color;
+                            font-family: Cera Round Pro;
+                            font-size: 16px;
+                            font-weight: 700;
+                            letter-spacing: 0.64px;
+                        }
+
+                        span{
+                            opacity: 0.5;
+                            color: var.$black-color;
+                            font-family: Open Sans;
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .tabs-home{
+        .tabs-top{
+            margin-top: 120px;
+            margin-bottom: 60px;
+            h1{
+                color: var.$primary-color;
+                font-variant-numeric: lining-nums tabular-nums;
+                font-family: Cera Round Pro;
+                font-size: 48px;
+                font-weight: 500;
+                letter-spacing: 1.44px;
+                text-transform: capitalize;
+            }
+        }
+        .tab-content{
+            margin-top: 50px;
+            .tab-pane{
+                .row{
+                    .cart{
+                        padding: 20px 40px;
+                        max-width: 310px;
+                        text-align: center;
+
+                        p{
+                            color: var.$black-color;
+                            font-family: Open Sans;
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+
+                        span{
+                            color: var.$primary-color;
+                            font-family: Open Sans;
+                            font-size: 24px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+
+#tabs-list {
+    gap: 15px;
+  }
+  #tabs-list .nav-link {
+    background-color:transparent;
+    border-radius: 10px;
+    color: var.$black-color;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 175%;
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+    border-radius: 100px;
+    border: 1px solid var.$primary-color;
+    padding: 10px 20px;
+
+  }
+  #tabs-list .active {
+    background: var.$primary-color;
+    color: var.$white-color;
+    padding: 10;
+  }
+  

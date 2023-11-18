@@ -1,0 +1,31 @@
+@use "../global";
+@use "../utils/variables" as var;
+
+main{
+   margin-bottom: 250px;
+
+   .container-about{
+      position: relative;
+      .about__img{
+         max-width: 100%;
+         margin: 30px auto;
+      }
+      p{
+         max-width: 720px;
+         color: #242424;
+         font-family: Open Sans;
+         font-size: 20px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 32px; /* 160% */
+         letter-spacing: 0.8px;
+         opacity: 0.8;
+      }
+
+      .gr-86{
+         bottom: 0;
+         right: -136px;
+         position: absolute;
+      }
+   }
+}
